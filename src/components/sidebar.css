@@ -1,0 +1,112 @@
+.columnWithTask {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: #f5f7fa;
+    min-width: 240px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.columnWithTask h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.columnWithTask ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.columnWithTask li {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 6px 12px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s ease;
+}
+
+.columnWithTask li:hover {
+    background-color: #f0f4f8;
+}
+
+.columnWithTask li span {
+    flex: 1;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.columnWithTask li span:hover {
+    text-decoration: underline;
+}
+
+.columnWithTask button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.columnWithTask button:hover {
+    background-color: #c0392b;
+}
+
+.columnWithTask input {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.columnWithTask input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    background-color: #fff;
+}
+
+.columnWithTask > div:last-child {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.columnWithTask > div:last-child button {
+    border-radius: 6px;
+    background-color: #4a90e2;
+    color: white;
+    padding: 6px 12px;
+    font-size: 14px;
+    height: auto;
+    width: auto;
+}
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .login-container form div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 6px;
+  }
+  

@@ -1,38 +1,41 @@
-.App {
+.kanban-board {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.column {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  width: 300px;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.column h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.task-list {
+  background-color: #e2e4e6;
+  min-height: 100px;
+  padding: 10px;
+  border-radius: 4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.task-list.dragging-over {
+  background-color: #d0d4d6;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.task {
+  user-select: none;
+  padding: 10px;
+  margin-bottom: 8px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task.dragging {
+  background-color: lightgreen;
 }
